@@ -1,0 +1,25 @@
+userName: abhinaylunawat_bmuaU5
+accessKey: iQSKjxNusXJ37X3tNFny
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Firefox
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Edge
+    browserVersion: latest
+browserstackLocal: true
+framework: testng
+projectName: hytest-autoui
+buildName: browserstack-build-v0.1
+buildIdentifier: ${DATE_TIME}
+testObservability: true
+debug: true # <boolean> # Set to true if you need screenshots for every selenium command ran
+networkLogs: true # <boolean> Set to true to enable HAR logs capturing
+consoleLogs: info
+parallelsPerPlatform: 3

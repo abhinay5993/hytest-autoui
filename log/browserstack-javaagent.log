@@ -1,0 +1,636 @@
+13:06:03.368 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+13:06:03.370 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:06:03.521 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, user.dir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, localrepository=C\:\\Users\\ABHINAY\\.m2\\repository}
+13:06:03.521 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:06:03.561 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:06:03.566 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+13:06:03.786 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:06:03.789 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 0bae30f2-7508-4f44-bbe6-15282a36f299
+13:06:03.789 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:06:03.798 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\ABHINAY\.browserstack already exist
+13:06:03.799 [main] DEBUG com.browserstack.v2.SdkCliUtils - getExistingCliPath: no binary found
+13:06:03.799 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: 
+13:06:04.556 [main] DEBUG com.browserstack.v2.SdkCliUtils - Need to update binary, current binary version: 0
+13:06:04.557 [main] DEBUG com.browserstack.v2.SdkCliUtils - Downloading SDK binary from: https://sdk-assets.browserstack.com/binary-win-x64-1.5.1.zip
+13:06:05.975 [main] DEBUG com.browserstack.v2.SdkCliUtils - Files successfully extracted to: C:\Users\ABHINAY\.browserstack\cli
+13:06:05.977 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:06:05.984 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+13:06:05.985 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+13:06:10.459 [main] ERROR com.browserstack.v2.SdkCLI - startMain: failed to start main-process=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:06:10.459 [main] ERROR com.browserstack.v2.SdkCLI - bootstrap: failed to bootstrap=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:06:10.459 [main] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:06:15.831 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:06:20.515 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: n4mgpgyis3rk25zizrdpybfziao1ynudql8tlqct
+13:06:20.515 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:06:20.516 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+13:06:21.860 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+13:06:21.860 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:06:33.356 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:07:09.605 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/n4mgpgyis3rk25zizrdpybfziao1ynudql8tlqct to view build report, insights, and many more debugging information all at one place!
+
+13:07:09.605 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:07:09.606 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:07:12.468 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:07:12.468 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:07:14.318 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 0bae30f2-7508-4f44-bbe6-15282a36f299, testhub id: n4mgpgyis3rk25zizrdpybfziao1ynudql8tlqct
+13:07:14.318 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:12:29.968 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+13:12:29.968 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:12:30.138 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, user.dir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, localrepository=C\:\\Users\\ABHINAY\\.m2\\repository}
+13:12:30.139 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:12:30.184 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:12:30.192 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+13:12:30.433 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:12:30.436 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: e39218e9-1c73-4ecb-a4e5-15e634e75627
+13:12:30.436 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:12:30.446 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\ABHINAY\.browserstack already exist
+13:12:30.448 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:12:32.501 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:12:32.509 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+13:12:32.509 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+13:12:32.898 [main] ERROR com.browserstack.v2.SdkCLI - startMain: failed to start main-process=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:12:32.898 [main] ERROR com.browserstack.v2.SdkCLI - bootstrap: failed to bootstrap=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:12:32.899 [main] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:12:38.561 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:12:39.885 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: azwxsx06ljpcamia7e0ddcdcqo33xhrezd1gjhus
+13:12:39.885 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:12:39.885 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+13:12:40.543 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+13:12:40.543 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:12:46.547 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:13:18.991 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/azwxsx06ljpcamia7e0ddcdcqo33xhrezd1gjhus to view build report, insights, and many more debugging information all at one place!
+
+13:13:18.991 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:13:18.993 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:13:21.706 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:13:21.706 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:13:23.998 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: e39218e9-1c73-4ecb-a4e5-15e634e75627, testhub id: azwxsx06ljpcamia7e0ddcdcqo33xhrezd1gjhus
+13:13:23.998 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:15:55.544 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+13:15:55.545 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:15:55.706 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, user.dir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, localrepository=C\:\\Users\\ABHINAY\\.m2\\repository}
+13:15:55.706 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:15:55.753 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:15:55.759 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+13:15:55.997 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:15:55.999 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 50e4fe4e-607b-4004-a306-38252161212c
+13:15:55.999 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:15:56.008 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\ABHINAY\.browserstack already exist
+13:15:56.011 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:15:57.993 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:15:58.001 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+13:15:58.001 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+13:15:58.374 [main] ERROR com.browserstack.v2.SdkCLI - startMain: failed to start main-process=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:15:58.375 [main] ERROR com.browserstack.v2.SdkCLI - bootstrap: failed to bootstrap=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:15:58.375 [main] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:16:03.891 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:16:05.188 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: i9cfqgx5tsq8xujhc42uq4rqqxk668ez3qgjz479
+13:16:05.188 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:16:05.188 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+13:16:05.784 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+13:16:05.784 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:16:11.512 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:16:51.248 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/i9cfqgx5tsq8xujhc42uq4rqqxk668ez3qgjz479 to view build report, insights, and many more debugging information all at one place!
+
+13:16:51.248 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:16:51.248 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:16:54.677 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:16:54.678 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:16:56.871 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/8d1b92448ff7b6ad25ffed1a91284db304491eae
+13:16:56.871 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:16:56.887 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 50e4fe4e-607b-4004-a306-38252161212c, testhub id: i9cfqgx5tsq8xujhc42uq4rqqxk668ez3qgjz479
+13:16:56.887 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:47.413 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.1.4
+13:57:47.414 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:57:47.577 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, user.dir=E\:\\browserStackTestThonWorkSpace\\hytest-autoui, localrepository=C\:\\Users\\ABHINAY\\.m2\\repository}
+13:57:47.577 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:57:47.619 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+13:57:47.625 [main] INFO  c.b.config.BrowserStackConfig - Setting value of testObservability as specified in your browserstack.yml to true
+13:57:47.860 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+13:57:47.862 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: c3fe4c5d-7719-4276-b886-8045081cec18
+13:57:47.862 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:47.871 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\ABHINAY\.browserstack already exist
+13:57:47.874 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:57:50.862 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe
+13:57:50.868 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+13:57:50.869 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\ABHINAY\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+13:57:51.243 [main] ERROR com.browserstack.v2.SdkCLI - startMain: failed to start main-process=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:57:51.243 [main] ERROR com.browserstack.v2.SdkCLI - bootstrap: failed to bootstrap=java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at com.browserstack.v2.SdkCLI.c(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.bootstrap(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+Caused by: java.lang.ExceptionInInitializerError
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent$Mpsc.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.newMpscQueue(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourceHolder.get(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.SharedResourcePool.getObject(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.a(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyChannelTransportFactoryBuilder.buildClientTransportFactory(Unknown Source)
+	at browserstack.shaded.io.grpc.internal.ManagedChannelImplBuilder.build(Unknown Source)
+	at browserstack.shaded.io.grpc.ForwardingChannelBuilder2.build(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at com.browserstack.v2.SdkCLI.a(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.NoSuchFieldException: producerIndex
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.util.UnsafeAccess.fieldOffset(Unknown Source)
+	at browserstack.shaded.io.grpc.netty.shaded.io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields.<clinit>(Unknown Source)
+	... 34 more
+Caused by: java.lang.NoSuchFieldException: producerIndex
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+	... 36 more
+
+13:57:51.243 [main] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:57:56.809 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:57:58.241 [main] INFO  com.browserstack.testOps.Listener - Testhub started with id: uyxs9jrmagwqkbrcwfcftxdq1uqerfebwp1yxcju
+13:57:58.241 [main] INFO  c.b.config.BrowserStackConfig - INFO
+13:57:58.241 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting Percy......
+13:57:59.672 [main] ERROR com.browserstack.PercyFactory - Initialization of percy failed - java.lang.Exception: Could not get percy token
+	at com.browserstack.PercyFactory.<init>(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.a(Unknown Source)
+	at com.browserstack.PercyFactory.createInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+13:57:59.672 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:58:07.310 [main] INFO  com.browserstack.LocalFactory - BrowserStack Local Started Successfully.
+13:58:48.642 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/uyxs9jrmagwqkbrcwfcftxdq1uqerfebwp1yxcju to view build report, insights, and many more debugging information all at one place!
+
+13:58:48.642 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:58:48.643 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli is not running.
+13:58:51.479 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:58:51.480 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\browserStackTestThonWorkSpace\hytest-autoui\browserstack.yml
+13:58:53.879 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/0369351e2061f9bdcdacc9cfa3aafc98e9eb4285
+13:58:53.880 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:58:53.885 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: c3fe4c5d-7719-4276-b886-8045081cec18, testhub id: uyxs9jrmagwqkbrcwfcftxdq1uqerfebwp1yxcju
+13:58:53.886 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
