@@ -26,6 +26,9 @@ def getJsonDataLists():
         print("\nData Raw : ",ri)
         del ri['_id']
     
+    """
+    Update the content of the JSON file used for the /api route in this branch - into Backend Routing.
+    """
     jsonResponse={
      'data':rawData
     }

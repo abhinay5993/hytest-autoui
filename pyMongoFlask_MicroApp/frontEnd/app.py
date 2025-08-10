@@ -47,6 +47,9 @@ View-Details - button click from UI with '/api' call to render JSON lists.
 """
 @appObj.route("/api")
 def getViewJesonDataLists():
+    """
+    Update the content of the JSON file used for the /api route in this branch - into FrontEnd Routing.
+    """
     strResponse=requests.get(backEndURI+"/api")
     return strResponse.json()
 
